@@ -6,10 +6,10 @@ import cors from "cors";
 
 dotenv.config();
 
-/*export const instance = new Razorpay({
+export const instance = new Razorpay({
   key_id: process.env.Razorpay_Key,
   key_secret: process.env.Razorpay_Secret,
-});*/
+});
 
 const app = express();
 
@@ -39,4 +39,5 @@ app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
   connectDb();
 });
+
 
